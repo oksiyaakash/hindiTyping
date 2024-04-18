@@ -4,32 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hindi Typing</title>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-        google.load("elements", "1", {
-              packages: "transliteration"
-            });
-   
-        function onLoad() {
-          var options = {
-              sourceLanguage:
-                  google.elements.transliteration.LanguageCode.ENGLISH,
-              destinationLanguage:
-                  [google.elements.transliteration.LanguageCode.HINDI],
-              shortcutKey: 'ctrl+g',
-              transliterationEnabled: true
-          };
-          var control =
-              new google.elements.transliteration.TransliterationControl(options);
-          control.makeTransliteratable(['english2hindi']);
-        }
-        google.setOnLoadCallback(onLoad);
-      </script>
+    
 </head>
 <body>
     <div>
         <textarea id="english2hindi" style="width:600px;height:200px"></textarea>
     </div>
-    <p>Press Ctrl+g to toggle between English and Hindi</p>
 </body>
 </html>
